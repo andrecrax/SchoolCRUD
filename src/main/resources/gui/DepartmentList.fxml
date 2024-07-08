@@ -5,9 +5,9 @@
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.text.*?>
 
-<VBox prefHeight="326.0" prefWidth="513.0" style="-fx-border-color: #616161;" styleClass="root" stylesheets="@style.css" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="senac.senacfx.controller.DepartmentListController">
+<VBox prefHeight="326.0" prefWidth="513.0" styleClass="root" stylesheets="@style.css" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="senac.senacfx.controller.DepartmentListController">
          <children>
-            <Label text="Registro de Turmas">
+            <Label text="Registro de Departamentos">
                <font>
                   <Font name="System Bold" size="18.0" />
                </font>
@@ -20,7 +20,7 @@
             </Label>
       <ToolBar prefHeight="40.0" prefWidth="200.0">
         <items>
-          <Button fx:id="btNew" defaultButton="true" mnemonicParsing="false" onAction="#onBtNewAction" style="-fx-background-color: #616161;" styleClass="button-new" text="Novo" textAlignment="CENTER" textFill="WHITE" />
+          <Button fx:id="btNew" mnemonicParsing="false" onAction="#onBtNewAction" styleClass="button-new" text="Novo" />
         </items>
       </ToolBar>
       <TableView fx:id="tableViewDepartment" prefHeight="200.0" prefWidth="200.0">
