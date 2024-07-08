@@ -20,7 +20,7 @@
                         <Menu mnemonicParsing="false" text="Registrar">
                             <items>
                                 <MenuItem fx:id="menuItemSeller" mnemonicParsing="false" onAction="#onMenuItemSellerAction" text="Alunos" />
-                                <MenuItem fx:id="menuItemDepartment" mnemonicParsing="false" onAction="#onMenuItemDepartmentAction" text="Turmas" />
+                                <MenuItem fx:id="menuItemDepartment" mnemonicParsing="false" onAction="#onMenuItemDepartmentAction" text="Turmas"/>
                             </items>
                         </Menu>
                         <Menu mnemonicParsing="false" text="Informações">
