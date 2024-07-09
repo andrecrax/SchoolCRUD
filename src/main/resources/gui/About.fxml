@@ -5,9 +5,9 @@
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.text.*?>
 
-<VBox alignment="CENTER" style="-fx-alignment: center;" stylesheets="@style.css" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="senac.senacfx.controller.AboutController">
+<VBox alignment="TOP_CENTER" cache="true" cacheHint="SCALE" prefHeight="620.0" prefWidth="842.0" stylesheets="@style.css" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="senac.senacfx.controller.AboutController">
     <children>
-        <Label contentDisplay="CENTER" prefHeight="36.0" prefWidth="68.0" styleClass="label-sobre" text="Sobre" textAlignment="CENTER">
+        <Label alignment="TOP_CENTER" contentDisplay="CENTER" prefHeight="38.0" prefWidth="791.0" styleClass="label-sobre" text="Sobre" textAlignment="CENTER">
             <font>
                 <Font name="System Bold" size="24.0" />
             </font>
@@ -18,7 +18,7 @@
                 <Insets bottom="10.0" left="20.0" top="10.0" />
             </padding>
         </Label>
-        <Text fill="#0d29e1" strokeWidth="0.0" text="Template desenvolvido como modelo para os alunos do SENAC." textAlignment="CENTER" wrappingWidth="756.68701171875">
+        <Text fill="#0d29e1" strokeWidth="0.0" text="Template desenvolvido como modelo para os alunos do SENAC." textAlignment="CENTER" wrappingWidth="675.68701171875">
             <VBox.margin>
                 <Insets left="20.0" right="20.0" top="50.0" />
             </VBox.margin>
