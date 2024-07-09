@@ -8,6 +8,9 @@
     -fx-spacing: 5px;
     -fx-background-color: lightgray;
     -fx-background-insets: 5px;
+    -fx-min-width: 840px;
+    -fx-min-height: 620px;
+    -fx-alignment: CENTER;
 }
 
 .button-style-yes
@@ -55,6 +58,7 @@
     -fx-font-family: "arial";
     -fx-font-size: 14px;
     -fx-font-weight: bolder;
+       -fx-alignment: CENTER;
 }
 
 .label-error
@@ -69,4 +73,15 @@
     -fx-font-family: "arial";
     -fx-font-size: 14px;
     -fx-font-weight: bolder;
+    -fx-alignment: CENTER;
+    -fx-text-alignment: center;
+}
+Text {
+    -fx-wrapping-width: 75%; /* Adjust wrapping width for responsiveness */
+}
+
+.hbox-center {
+    -fx-alignment: center;
+    -fx-padding: 10px;
+    -fx-fill-width: true;
 }

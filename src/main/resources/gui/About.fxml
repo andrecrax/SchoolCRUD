@@ -5,39 +5,39 @@
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.text.*?>
 
-<VBox prefHeight="519.0" prefWidth="693.0" stylesheets="@style.css" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="senac.senacfx.controller.AboutController">
-         <children>
-            <Label prefHeight="36.0" prefWidth="68.0" styleClass="label-sobre" text="Sobre">
-               <font>
-                  <Font name="System Bold" size="24.0" />
-               </font>
-               <VBox.margin>
-                  <Insets />
-               </VBox.margin>
-               <padding>
-                  <Insets bottom="10.0" left="20.0" top="10.0" />
-               </padding>
-            </Label>
-      <Text fill="#0d29e1" strokeType="OUTSIDE" strokeWidth="0.0" text="Template desenvolvido como modelo para os alunos do SENAC." textAlignment="CENTER" wrappingWidth="618.68701171875">
-         <VBox.margin>
-            <Insets left="20.0" right="20.0" top="50.0" />
-         </VBox.margin>
-         <font>
-            <Font name="Candara Light" size="34.0" />
-         </font>
-      </Text>
-      <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Aqui pode ser colocado informações sobre o desenvolvimento dessa aplicação e os créditos aos desenvolvedores." textAlignment="CENTER" wrappingWidth="618.68701171875">
-         <VBox.margin>
-            <Insets bottom="10.0" left="20.0" right="20.0" top="100.0" />
-         </VBox.margin>
-         <font>
-            <Font size="18.0" />
-         </font>
-      </Text>
-      <Text layoutX="47.0" layoutY="313.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Estrutura de aprendizado simples, envolvendo manipulação de telas para os alunos do SenacTecnologias utilizadas: Java, JavaFX, Scene Builder, MySQL, Git, GitHub, JDBC, MySQL Workbench, CSS" textAlignment="CENTER" wrappingWidth="655.68701171875">
-         <font>
-            <Font size="18.0" />
-         </font>
-      </Text>
-         </children>
+<VBox alignment="CENTER" style="-fx-alignment: center;" stylesheets="@style.css" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="senac.senacfx.controller.AboutController">
+    <children>
+        <Label contentDisplay="CENTER" prefHeight="36.0" prefWidth="68.0" styleClass="label-sobre" text="Sobre" textAlignment="CENTER">
+            <font>
+                <Font name="System Bold" size="24.0" />
+            </font>
+            <VBox.margin>
+                <Insets />
+            </VBox.margin>
+            <padding>
+                <Insets bottom="10.0" left="20.0" top="10.0" />
+            </padding>
+        </Label>
+        <Text fill="#0d29e1" strokeWidth="0.0" text="Template desenvolvido como modelo para os alunos do SENAC." textAlignment="CENTER" wrappingWidth="756.68701171875">
+            <VBox.margin>
+                <Insets left="20.0" right="20.0" top="50.0" />
+            </VBox.margin>
+            <font>
+                <Font name="Candara Light" size="34.0" />
+            </font>
+        </Text>
+        <Text cache="true" cacheHint="SCALE" strokeWidth="0.0" text="Aqui pode ser colocado informações sobre o desenvolvimento dessa aplicação e os créditos aos desenvolvedores." textAlignment="CENTER" wrappingWidth="754.68701171875">
+            <VBox.margin>
+                <Insets bottom="10.0" left="20.0" right="20.0" top="100.0" />
+            </VBox.margin>
+            <font>
+                <Font size="18.0" />
+            </font>
+        </Text>
+        <Text layoutX="47.0" layoutY="313.0" strokeWidth="0.0" text="Estrutura de aprendizado simples, envolvendo manipulação de telas para os alunos do SenacTecnologias utilizadas: Java, JavaFX, Scene Builder, MySQL, Git, GitHub, JDBC, MySQL Workbench, CSS" textAlignment="CENTER" wrappingWidth="800.0">
+            <font>
+                <Font size="18.0" />
+            </font>
+        </Text>
+    </children>
 </VBox>
