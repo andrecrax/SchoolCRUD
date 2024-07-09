@@ -47,7 +47,7 @@ public class SellerFormController implements Initializable {
     private DatePicker dpBirthDate;
 
     @FXML
-    private TextField txtBaseSalary;
+    private TextField txtGrade;
 
     @FXML
     private ComboBox<Department> comboBoxDepartment;
@@ -137,10 +137,10 @@ public class SellerFormController implements Initializable {
             obj.setBirthDate(Date.from(instant));
         }
 
-        if (txtBaseSalary.getText() == null || txtBaseSalary.getText().trim().equals("")){
+        if (txtGrade.getText() == null || txtGrade.getText().trim().equals("")){
             exception.addError("baseSalary", "campo nao pode ser vazio");
         }
-        obj.setBaseSalary(Utils.tryParseToDouble(txtBaseSalary.getText()));
+        obj.setGrade(Utils.tryParseToDouble(txtGrade.getText()));
 
         obj.setDepartment(comboBoxDepartment.getValue());
 
@@ -165,7 +165,7 @@ public class SellerFormController implements Initializable {
     private void initializeNodes() {
         Constraints.setTextFieldInteger(txtId);
         Constraints.setTextFieldMaxLength(txtName, 70);
-        Constraints.setTextFieldDouble(txtBaseSalary);
+        Constraints.setTextFieldDouble(txtGrade);
         Constraints.setTextFieldMaxLength(txtEmail, 60);
         Utils.formatDatePicker(dpBirthDate, "dd/MM/yyyy");
 
@@ -189,7 +189,7 @@ public class SellerFormController implements Initializable {
             dpBirthDate.setValue(LocalDate.ofInstant(entity.getBirthDate().toInstant(), ZoneId.systemDefault()));
         }
 
-        txtBaseSalary.setText(String.format("%.2f", entity.getBaseSalary()));
+        txtGrade.setText(String.format("%.2f", entity.getGrade()));
 
         if (entity.getDepartment() == null) {
             comboBoxDepartment.getSelectionModel().selectFirst();

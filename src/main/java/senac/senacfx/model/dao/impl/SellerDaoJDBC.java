@@ -25,14 +25,14 @@ public class SellerDaoJDBC implements SellerDao {
         try{
             st = conn.prepareStatement(
                     "insert into seller " +
-                            "(Name, Email, BirthDate, BaseSalary, DepartmentId) " +
+                            "(Name, Email, BirthDate, Grade, DepartmentId) " +
                             "values (?, ?, ?, ?, ?)",
                     Statement.RETURN_GENERATED_KEYS);
 
             st.setString(1, obj.getName());
             st.setString(2, obj.getEmail());
             st.setDate(3, new Date(obj.getBirthDate().getTime()));
-            st.setDouble(4, obj.getBaseSalary());
+            st.setDouble(4, obj.getGrade());
             st.setInt(5, obj.getDepartment().getId());
 
             int rowsAffected = st.executeUpdate();
@@ -61,13 +61,13 @@ public class SellerDaoJDBC implements SellerDao {
         try{
             st = conn.prepareStatement(
                     "update seller " +
-                            "set Name = ?, Email = ?, BirthDate = ?, BaseSalary = ?, DepartmentId = ? " +
+                            "set Name = ?, Email = ?, BirthDate = ?, Grade = ?, DepartmentId = ? " +
                             "where id = ?");
 
             st.setString(1, obj.getName());
             st.setString(2, obj.getEmail());
             st.setDate(3, new Date(obj.getBirthDate().getTime()));
-            st.setDouble(4, obj.getBaseSalary());
+            st.setDouble(4, obj.getGrade());
             st.setInt(5, obj.getDepartment().getId());
             st.setInt(6, obj.getId());
 
@@ -141,7 +141,7 @@ public class SellerDaoJDBC implements SellerDao {
         obj.setId(rs.getInt("Id"));
         obj.setName(rs.getString("Name"));
         obj.setEmail(rs.getString("Email"));
-        obj.setBaseSalary(rs.getDouble("BaseSalary"));
+        obj.setGrade(rs.getDouble("Grade"));
         obj.setBirthDate(new java.util.Date(rs.getTimestamp("BirthDate").getTime()));
         obj.setDepartment(dep);
         return obj;
