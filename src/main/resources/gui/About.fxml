@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.geometry.*?>
-<?import javafx.scene.control.*?>
-<?import javafx.scene.layout.*?>
-<?import javafx.scene.text.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
 
-<VBox alignment="TOP_CENTER" cache="true" cacheHint="SCALE" prefHeight="620.0" prefWidth="842.0" stylesheets="@style.css" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="senac.senacfx.controller.AboutController">
+<VBox alignment="TOP_CENTER" cache="true" cacheHint="SCALE" prefHeight="620.0" prefWidth="842.0" style="-fx-border-color: #6161;" stylesheets="@style.css" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="senac.senacfx.controller.AboutController">
     <children>
         <Label alignment="TOP_CENTER" contentDisplay="CENTER" prefHeight="38.0" prefWidth="791.0" styleClass="label-sobre" text="Sobre" textAlignment="CENTER">
             <font>
@@ -18,7 +19,7 @@
                 <Insets bottom="10.0" left="20.0" top="10.0" />
             </padding>
         </Label>
-        <Text fill="#0d29e1" strokeWidth="0.0" text="Template desenvolvido como modelo para os alunos do SENAC." textAlignment="CENTER" wrappingWidth="675.68701171875">
+        <Text fill="#24992d" strokeWidth="0.0" text="Desenvolvido por NãoSalvo." textAlignment="CENTER" wrappingWidth="675.68701171875">
             <VBox.margin>
                 <Insets left="20.0" right="20.0" top="50.0" />
             </VBox.margin>
@@ -26,7 +27,7 @@
                 <Font name="Candara Light" size="34.0" />
             </font>
         </Text>
-        <Text cache="true" cacheHint="SCALE" strokeWidth="0.0" text="Aqui pode ser colocado informações sobre o desenvolvimento dessa aplicação e os créditos aos desenvolvedores." textAlignment="CENTER" wrappingWidth="754.68701171875">
+        <Text cache="true" cacheHint="SCALE" strokeWidth="0.0" text="Integrantes: Thiago A. Virmes, André Craco, Cleverson Alves e Gabriel Mello" textAlignment="CENTER" wrappingWidth="754.68701171875">
             <VBox.margin>
                 <Insets bottom="10.0" left="20.0" right="20.0" top="100.0" />
             </VBox.margin>
@@ -34,7 +35,7 @@
                 <Font size="18.0" />
             </font>
         </Text>
-        <Text layoutX="47.0" layoutY="313.0" strokeWidth="0.0" text="Estrutura de aprendizado simples, envolvendo manipulação de telas para os alunos do SenacTecnologias utilizadas: Java, JavaFX, Scene Builder, MySQL, Git, GitHub, JDBC, MySQL Workbench, CSS" textAlignment="CENTER" wrappingWidth="800.0">
+        <Text layoutX="47.0" layoutY="313.0" strokeWidth="0.0" text="Estrutura de aprendizado simples, envolvendo manipulação de telas utilizando: Java, JavaFX, Scene Builder, MySQL, Git, GitHub, JDBC, MySQL Workbench, CSS" textAlignment="CENTER" wrappingWidth="800.0">
             <font>
                 <Font size="18.0" />
             </font>
