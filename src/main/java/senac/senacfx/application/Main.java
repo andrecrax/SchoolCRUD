@@ -25,7 +25,7 @@ public class Main extends Application {
 
             mainScene = new Scene(scrollPane);
             primaryStage.setScene(mainScene);
-            primaryStage.setTitle("Escolinha do Senac");
+            primaryStage.setTitle("SCHOOLCRUD");
             primaryStage.show();
         } catch (IOException e) {
             e.printStackTrace();
