@@ -25,13 +25,13 @@
       </ToolBar>
       <TableView fx:id="tableViewSeller" prefHeight="200.0" prefWidth="200.0" stylesheets="@style.css">
         <columns>
-          <TableColumn fx:id="tableColumnId" prefWidth="24.0" text="Id" />
-          <TableColumn fx:id="tableColumnName" prefWidth="96.0" text="Nome" />
-            <TableColumn fx:id="tableColumnEmail" prefWidth="105.0" text="E-mail" />
-            <TableColumn fx:id="tableColumnBirthDate" prefWidth="142.0" text="Data de Nascimento" />
-            <TableColumn fx:id="tableColumnGrade" minWidth="8.0" prefWidth="61.0" text="Notas" />
-            <TableColumn fx:id="tableColumnEDIT" prefWidth="78.0" />
-            <TableColumn fx:id="tableColumnREMOVE" prefWidth="83.0" />
+          <TableColumn fx:id="tableColumnId" prefWidth="76.0" text="Matrícula" />
+          <TableColumn fx:id="tableColumnName" prefWidth="89.0" text="Nome" />
+            <TableColumn fx:id="tableColumnEmail" prefWidth="75.0" text="E-mail" />
+            <TableColumn fx:id="tableColumnBirthDate" prefWidth="151.0" text="Data de Nascimento" />
+            <TableColumn fx:id="tableColumnGrade" minWidth="8.0" prefWidth="105.0" text="Notas" />
+            <TableColumn fx:id="tableColumnEDIT" prefWidth="82.0" />
+            <TableColumn fx:id="tableColumnREMOVE" prefWidth="142.0" />
         </columns>
       </TableView>
          </children>

@@ -25,10 +25,10 @@
       </ToolBar>
       <TableView fx:id="tableViewDepartment" prefHeight="200.0" prefWidth="200.0">
         <columns>
-          <TableColumn fx:id="tableColumnId" prefWidth="85.0" text="Matrícula" />
+          <TableColumn fx:id="tableColumnId" prefWidth="85.0" text="Código" />
           <TableColumn fx:id="tableColumnName" prefWidth="217.0" text="Nome" />
-            <TableColumn fx:id="tableColumnEDIT" prefWidth="38.0" />
-            <TableColumn fx:id="tableColumnREMOVE" prefWidth="84.0" />
+            <TableColumn fx:id="tableColumnEDIT" prefWidth="64.0" />
+            <TableColumn fx:id="tableColumnREMOVE" prefWidth="144.0" />
         </columns>
       </TableView>
          </children>
