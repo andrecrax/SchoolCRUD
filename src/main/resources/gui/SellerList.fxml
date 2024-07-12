@@ -17,7 +17,10 @@
             </Label>
       <ToolBar prefHeight="40.0" prefWidth="200.0" stylesheets="@style.css">
         <items>
-          <Button fx:id="btNew" mnemonicParsing="false" onAction="#onBtNewAction" style="-fx-background-color: #616161;" styleClass="button-new" text="Novo" textFill="WHITE" />
+          <Button fx:id="btNew" mnemonicParsing="false" onAction="#onBtNewAction" style="-fx-background-color: #616161;" styleClass="button-new" text="Novo" textFill="WHITE">
+               <font>
+                  <Font size="5.0" />
+               </font></Button>
         </items>
       </ToolBar>
       <TableView fx:id="tableViewSeller" prefHeight="200.0" prefWidth="200.0" stylesheets="@style.css">
